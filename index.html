@@ -16,12 +16,50 @@
             Level 2: HTML
             Level 3: Head/Body
             Level 4: (Body's child) Header and Paragraph-->
-        <h1>Heading 1</h1>
-        <h2>Heading 2</h2>
-        <h3>Heading 3</h3>
-        <h4>Heading 4</h4>
-        <h5>Heading 5</h5>
-        <h6>Heading 6</h6>
-        <p>Paragraph</p> <!--This is almost the same size as of h4.-->
+        <h1>Heading 1</h1> <!--32px, title-->
+        <h2>Heading 2</h2> <!--24px, main section headings-->
+        <h3>Heading 3</h3> <!--18px, subsection headings (same as h4 and h5)-->
+        <h4>Heading 4</h4> <!--16px-->
+        <h5>Heading 5</h5> <!--14px-->
+        <h6>Heading 6</h6> <!--12px, least important heading-->
+        <!--Headings are good for INDEXING and SEO. Don't skip heading tags-->
+        <p>Paragraph</p> <!--This is almost the same size as of h4. With a blank line above and below the text.-->
+        <!--Formatting-->
+        <p>This is an <strong>important</strong> text, an <em>emphasized</em> text, an <u>underlined</u> text, 
+            a <sup>superscript</sup>, a <sub>subscript</sub>, a <del>strikethroughed</del> text, and a <mark>marked</mark>
+            text in yellow (default) color.</p>
+        <!--Note: MARK is used when (1) quoting something and want to highlight a part of it,
+        (2) highlight a part of content relevant to user's current activity (searcg operation),
+        (3) BUT NOT for syntax highlighting purposes; use <span>.-->
+        <p>This is a <q>quote</q>.</p>
+        <blockquote>
+            <p>This is a blockquote for longer quotes. Meatball pork loin porchetta rump. Ut do rump, commodo t-bone non et 
+                meatball cupidatat est voluptate ham beef ribs. Rump eu short ribs pancetta deserunt flank dolore turkey ham 
+                strip steak jowl venison meatball polony et. Ex sirloin culpa tenderloin proident, pastrami boudin kielbasa 
+                filet mignon fatback. Spare ribs alcatra veniam nostrud. Ball tip brisket non, hamburger ham short loin occaecat 
+                irure spare ribs dolore landjaeger voluptate cillum polony.</p>
+        </blockquote>
+        <p>To mark up a title or source, use <cite>"cite"</cite> to display it in italic style.</p>
+        <!--Providing a URL is one way to use <cite>.-->
+        <p>Sample Usage: As Steve Jobs once said, <q cite="https://www.brainyquote.com/quotes/steve_jobs_416096">Innovation 
+            distinguishes between a leader and a follower.</q></p>
+            <!--Isn't visible but helpfful for screen readers.-->
+        <blockquote>
+            <p>The more that you read, the more things you will know. The more that you learn, the more places you'll go.</p>
+            <footer>- Dr. Seuss</footer>
+        </blockquote>
+        <br> <!--A new line-->
+        <hr> <!--Horizontal line-->
+        <code>Show a snippet of code in monospaced font</code>
+        <pre>This is used for writing computer code, poetry, or song lyrics.</pre>
+        <p>Example of a code:</p>
+        <pre>           &lt;body&gt;
+                &lt;h1&gt;Hello, World!&lt;/h1&gt;
+                &lt;p&gt;Welcome to my first HTML page.&lt;/p&gt;
+            &lt;/body&gt;</pre>
+        <p>Sample 1: <kbd>Ctrl + C</kbd></p> <!--Display Keyboard Input: Sometimes, this is shown in a rectangular box.
+            Here, the rectangle needs to be designed in CSS.-->
+        <br>
+        <samp>Invalid username or password.</samp> <!--Display Sample Output:-->
     </body>
 </html>
